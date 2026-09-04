@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="星流 AI — 连接全球前沿模型的智能 API 基础设施。" />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>星流 AI — 更快连接前沿模型</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="星流 AI 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 36 36" fill="none"><path d="M7 21.5C10.8 9.8 16.8 5.5 29 7c-2.3 13.2-8.8 20-21.5 22 4.8-2.6 8-6.1 10.1-10.3C14 21 10.6 22 7 21.5Z" fill="currentColor"/><circle cx="24.5" cy="12" r="2.2" fill="#F06D54"/></svg>
+          </span>
+          <span>星流</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="主导航">
+          <a class="active" href="#top">首页</a>
+          <a href="#workflow">接入方式</a>
+          <a href="#models">模型广场</a>
+          <a href="#pricing">价格</a>
+          <a href="#faq">文档</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="切换深色模式">
+            <svg class="sun" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3.7" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.5V5M12 19v2.5M21.5 12H19M5 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1 5.3 5.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <svg class="moon" viewBox="0 0 24 24" fill="none"><path d="M20 15.3A8.3 8.3 0 0 1 8.7 4a8.4 8.4 0 1 0 11.3 11.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </button>
+          <a class="login-link" href="#pricing">登录</a>
+          <a class="button button-small button-accent" href="#pricing">开始使用 <span>↗</span></a>
+          <button class="menu-button" type="button" aria-label="打开菜单" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" aria-hidden="true">
+        <a href="#workflow">接入方式</a><a href="#models">模型广场</a><a href="#pricing">价格</a><a href="#faq">文档</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-wrap">
+        <div class="quick-bar reveal">
+          <div class="quick-links">
+            <a href="#status"><span class="live-dot"></span> 服务状态</a>
+            <a href="#models">模型生态</a>
+            <a href="#workflow">接入指南</a>
+          </div>
+          <a class="quick-cta" href="#pricing">免费开始 <span>→</span></a>
+        </div>
+
+        <div class="uptime reveal" id="status">
+          <span class="uptime-label">稳定运行</span>
+          <strong data-uptime-days>168</strong><span>天</span>
+          <strong data-uptime-hours>08</strong><span>时</span>
+          <strong data-uptime-minutes>24</strong><span>分</span>
+          <strong data-uptime-seconds>36</strong><span>秒</span>
+          <span class="status-note"><i></i> 所有系统正常</span>
+        </div>
+
+        <div class="eyebrow reveal"><span></span> 快速 · 聚合 · 可靠</div>
+        <h1 class="hero-title reveal">
+          让每一次智能调用<br />
+          都<span class="accent-word">快人一步</span><i class="spark" aria-hidden="true">✦</i>
+        </h1>
+        <p class="hero-copy reveal">一个接口连接 OpenAI、Claude、Gemini 等全球前沿模型。<br class="desktop-only" />无需改变开发习惯，即刻获得稳定、透明且高性能的模型服务。</p>
+        <div class="hero-actions reveal">
+          <a class="button button-dark" href="#pricing">获取 API Key <span>↗</span></a>
+          <a class="button button-ghost" href="#workflow"><span class="play-icon">▶</span> 查看接入方式</a>
+        </div>
+        <div class="model-chips reveal" aria-label="热门模型">
+          <span><i class="chip-logo openai">O</i> GPT-5</span>
+          <span><i class="chip-logo claude">A</i> Claude Opus</span>
+          <span><i class="chip-logo gemini">✦</i> Gemini Pro</span>
+          <span><i class="chip-logo deepseek">D</i> DeepSeek</span>
+        </div>
+      </section>
+
+      <section class="gateway-section section-wrap" id="workflow">
+        <div class="gateway-window reveal">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span class="mono">xingliu.gateway / live</span>
+            <span class="window-secure"><i></i> SECURE</span>
+          </div>
+          <div class="gateway-grid">
+            <div class="flow-column clients">
+              <div class="column-label mono">01 / CLIENTS</div>
+              <div class="flow-card active">
+                <div class="flow-icon codex-icon">⌘</div>
+                <div><strong>Codex</strong><small>高频编码工作流</small></div>
+                <span class="ping"></span>
+              </div>
+              <div class="flow-card">
+                <div class="flow-icon terminal-icon">›_</div>
+                <div><strong>Claude Code</strong><small>终端开发助手</small></div>
+                <span class="ping"></span>
+              </div>
+              <div class="flow-card">
+                <div class="flow-icon cherry-icon">C</div>
+                <div><strong>Cherry Studio</strong><small>桌面智能客户端</small></div>
+                <span class="ping"></span>
+              </div>
+            </div>
+
+            <div class="route-lines left-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+
+            <div class="gateway-core">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="core-glow"></div>
+              <div class="core-logo"><span class="brand-mark large"><svg viewBox="0 0 36 36" fill="none"><path d="M7 21.5C10.8 9.8 16.8 5.5 29 7c-2.3 13.2-8.8 20-21.5 22 4.8-2.6 8-6.1 10.1-10.3C14 21 10.6 22 7 21.5Z" fill="currentColor"/><circle cx="24.5" cy="12" r="2.2" fill="#F06D54"/></svg></span></div>
+              <strong>星流 Gateway</strong>
+              <small>智能模型路由核心</small>
+              <div class="core-status"><i></i> 12ms</div>
+            </div>
+
+            <div class="route-lines right-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+
+            <div class="flow-column models">
+              <div class="column-label mono">02 / MODELS</div>
+              <div class="flow-card"><div class="flow-icon openai-bg">O</div><div><strong>OpenAI</strong><small>GPT-5 / o3</small></div><span class="load">24%</span></div>
+              <div class="flow-card active"><div class="flow-icon claude-bg">A</div><div><strong>Anthropic</strong><small>Claude Opus</small></div><span class="load">41%</span></div>
+              <div class="flow-card"><div class="flow-icon gemini-bg">✦</div><div><strong>Google</strong><small>Gemini Pro</small></div><span class="load">18%</span></div>
+            </div>
+          </div>
+          <div class="terminal-strip mono">
+            <span><i class="terminal-dot"></i> POST /v1/responses</span>
+            <span>200 OK</span><span>TTFT 0.31s</span><span class="terminal-live">STREAMING</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-cloud section-wrap" id="models">
+        <p class="section-kicker reveal">为你常用的工具而生</p>
+        <div class="logo-row reveal">
+          <div class="logo-item"><span class="logo-symbol">◎</span> OpenAI</div>
+          <div class="logo-item"><span class="logo-symbol">AI</span> Anthropic</div>
+          <div class="logo-item"><span class="logo-symbol">✦</span> Gemini</div>
+          <div class="logo-item"><span class="logo-symbol">◫</span> DeepSeek</div>
+          <div class="logo-item"><span class="logo-symbol">◉</span> Grok</div>
+          <div class="logo-item"><span class="logo-symbol">⌘</span> Codex</div>
+        </div>
+      </section>
+
+      <section class="intro-section section-wrap">
+        <div class="section-heading reveal">
+          <div><p class="overline">为什么选择星流</p><h2>复杂留给我们，<br />专注留给你。</h2></div>
+          <p>从第一行代码到生产环境，只需替换基础地址与鉴权信息。其余的路由、容灾和性能优化，全部自动完成。</p>
+        </div>
+
+        <div class="feature-bento">
+          <article class="feature-card feature-wide reveal">
+            <div class="feature-copy"><span class="feature-number mono">01</span><h3>一次配置，全模型可用</h3><p>兼容 OpenAI 标准协议，不需要重写业务代码。一个 API Key 即可按需调用不同厂商的前沿模型。</p><a href="#faq">查看接入文档 <span>→</span></a></div>
+            <div class="code-demo" aria-label="API 接入代码示例">
+              <div class="code-top"><span class="mono">quickstart.ts</span><span class="copy-code">复制</span></div>
+              <pre><code><em>import</em> OpenAI <em>from</em> <b>"openai"</b>;
+
+<em>const</em> client = <em>new</em> OpenAI({
+  baseURL: <b>"https://api.xingliu.ai/v1"</b>,
+  apiKey: process.env.<span>XINGLIU_KEY</span>
+});
+
+<em>const</em> result = <em>await</em> client.responses.create({
+  model: <b>"claude-opus"</b>,
+  input: <b>"Build something remarkable."</b>
+});</code></pre>
+              <div class="code-success mono"><i></i> CONNECTED · 200 OK</div>
+            </div>
+          </article>
+
+          <article class="feature-card metric-card reveal">
+            <span class="feature-number mono">02</span><h3>极速响应</h3><div class="big-metric"><span>31</span><small>ms</small></div><p>智能选择当前最快节点，让首字响应保持迅捷。</p>
+            <div class="mini-chart" aria-hidden="true"><i style="height:33%"></i><i style="height:48%"></i><i style="height:41%"></i><i style="height:66%"></i><i style="height:55%"></i><i style="height:79%"></i><i style="height:68%"></i><i style="height:91%"></i><i style="height:82%"></i><i style="height:100%"></i></div>
+          </article>
+
+          <article class="feature-card uptime-card reveal">
+            <span class="feature-number mono">03</span><h3>可靠而稳定</h3><div class="availability"><span>99.99</span><small>%</small></div><p>多节点容灾与秒级故障迁移，让高频调用始终在线。</p>
+            <div class="health-grid" aria-hidden="true"></div>
+          </article>
+
+          <article class="feature-card security-card reveal">
+            <span class="feature-number mono">04</span><div class="shield"><svg viewBox="0 0 64 64" fill="none"><path d="M32 5 53 13v16c0 14-8.8 24.7-21 30C19.8 53.7 11 43 11 29V13L32 5Z" stroke="currentColor" stroke-width="2"/><path d="m23 31 6 6 13-14" stroke="#F06D54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>数据安全优先</h3><p>请求数据不落盘、不用于训练。端到端加密保护每一次调用。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="steps-section section-wrap">
+        <div class="steps-title reveal"><p class="overline">轻松开始</p><h2>三分钟，完成第一次调用</h2><p>保持熟悉的开发方式，让服务切换像修改一行配置一样简单。</p></div>
+        <div class="steps-grid">
+          <article class="step reveal"><span class="step-index mono">STEP 01</span><div class="step-icon">⌁</div><h3>创建账号</h3><p>注册并进入控制台，创建专属访问密钥。</p></article>
+          <div class="step-arrow" aria-hidden="true">→</div>
+          <article class="step reveal"><span class="step-index mono">STEP 02</span><div class="step-icon">{ }</div><h3>替换地址</h3><p>把 Base URL 和 API Key 填入现有应用。</p></article>
+          <div class="step-arrow" aria-hidden="true">→</div>
+          <article class="step reveal"><span class="step-index mono">STEP 03</span><div class="step-icon">↗</div><h3>开始调用</h3><p>选择你需要的模型，即刻投入生产使用。</p></article>
+        </div>
+      </section>
+
+      <section class="pricing-section section-wrap" id="pricing">
+        <div class="pricing-heading reveal">
+          <div><p class="overline">透明计费</p><h2>只为真正使用的价值付费</h2></div>
+          <div class="billing-toggle" role="group" aria-label="计费模式"><button class="active" type="button">按量计费</button><button type="button">团队方案</button></div>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <div class="plan-line"><span class="plan-icon">◇</span><span>开发者</span></div><p>适合个人项目和产品原型</p><div class="price"><small>¥</small><strong>0</strong><span>起步门槛</span></div>
+            <ul><li>全系列主流模型</li><li>按量使用，余额长期有效</li><li>标准并发与技术支持</li><li>完整 API 与使用日志</li></ul>
+            <a class="button button-outline full" href="#top">免费开始</a>
+          </article>
+          <article class="price-card featured reveal">
+            <div class="popular-tag">MOST POPULAR</div>
+            <div class="plan-line"><span class="plan-icon filled">✦</span><span>专业版</span></div><p>适合高频开发者与成长团队</p><div class="price"><small>¥</small><strong>49</strong><span>/ 月起</span></div>
+            <ul><li>更优惠的模型调用倍率</li><li>高优先级低延迟通道</li><li>更高并发与速率上限</li><li>专属工单技术支持</li></ul>
+            <a class="button button-accent full" href="#top">选择专业版 <span>↗</span></a>
+          </article>
+          <article class="price-card reveal">
+            <div class="plan-line"><span class="plan-icon">▱</span><span>企业版</span></div><p>为规模化业务定制基础设施</p><div class="price custom"><strong>定制</strong><span>按业务需求</span></div>
+            <ul><li>专属资源池与独立通道</li><li>SLA 保障和用量折扣</li><li>团队权限与账单管理</li><li>专属客户成功经理</li></ul>
+            <a class="button button-outline full" href="mailto:hello@xingliu.ai">联系商务</a>
+          </article>
+        </div>
+        <p class="pricing-note reveal">所有套餐均支持随时升级或停止 · 无隐藏费用 · 用量实时可查</p>
+      </section>
+
+      <section class="testimonial-section section-wrap">
+        <div class="quote-mark">“</div>
+        <blockquote class="reveal">稳定性和速度是我们选择星流的原因。接入之后，团队不再需要维护多套模型 SDK，产品迭代明显更快了。</blockquote>
+        <div class="quote-author reveal"><div class="avatar">L</div><div><strong>林屿</strong><span>某 AI 创业团队 · 技术负责人</span></div></div>
+      </section>
+
+      <section class="faq-section section-wrap" id="faq">
+        <div class="faq-heading reveal"><p class="overline">常见问题</p><h2>你关心的，<br />我们提前回答。</h2><p>还有其他问题？欢迎随时联系技术团队。</p><a href="mailto:hello@xingliu.ai">hello@xingliu.ai <span>↗</span></a></div>
+        <div class="faq-list reveal">
+          <details open><summary>支持哪些模型和调用格式？<span></span></summary><p>支持 OpenAI、Anthropic、Google、DeepSeek 等主流模型，并兼容 OpenAI Chat Completions 与 Responses API 格式。</p></details>
+          <details><summary>如何从现有服务迁移？<span></span></summary><p>通常只需修改 SDK 中的 Base URL 和 API Key，无需改变已有的消息结构或业务逻辑。</p></details>
+          <details><summary>调用失败会自动切换节点吗？<span></span></summary><p>会。智能路由会持续评估节点健康度，并在异常时进行秒级故障迁移和有限重试。</p></details>
+          <details><summary>请求内容会被保存吗？<span></span></summary><p>业务请求内容默认不持久化，也不会用于模型训练。仅保留必要的脱敏计量数据用于账单与故障排查。</p></details>
+          <details><summary>是否支持企业发票和合同？<span></span></summary><p>支持。企业客户可申请合同、对公付款、发票以及按业务规模定制的 SLA 服务。</p></details>
+        </div>
+      </section>
+
+      <section class="final-cta section-wrap">
+        <div class="cta-card reveal">
+          <div class="cta-orbit one"></div><div class="cta-orbit two"></div>
+          <span class="cta-star">✦</span>
+          <p class="mono">READY WHEN YOU ARE</p>
+          <h2>准备好让灵感<br />跑得更快了吗？</h2>
+          <p>现在注册，获得新用户免费调用额度。</p>
+          <a class="button button-light" href="#top">免费创建账号 <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 36 36" fill="none"><path d="M7 21.5C10.8 9.8 16.8 5.5 29 7c-2.3 13.2-8.8 20-21.5 22 4.8-2.6 8-6.1 10.1-10.3C14 21 10.6 22 7 21.5Z" fill="currentColor"/><circle cx="24.5" cy="12" r="2.2" fill="#F06D54"/></svg></span><span>星流</span></a><p>连接智能世界的可靠基础设施。</p></div>
+        <div class="footer-links"><div><strong>产品</strong><a href="#models">模型广场</a><a href="#pricing">价格方案</a><a href="#status">服务状态</a></div><div><strong>资源</strong><a href="#workflow">快速接入</a><a href="#faq">开发文档</a><a href="#faq">常见问题</a></div><div><strong>关于</strong><a href="#top">关于我们</a><a href="mailto:hello@xingliu.ai">联系我们</a><a href="#top">用户协议</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 星流 AI. All rights reserved.</span><span class="mono"><i></i> ALL SYSTEMS OPERATIONAL</span></div>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
+
