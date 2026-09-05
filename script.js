@@ -12,21 +12,6 @@ reveals.forEach((element, index) => {
   revealObserver.observe(element);
 });
 
-const startedAt = new Date('2026-03-20T08:00:00+08:00').getTime();
-function updateUptime() {
-  const elapsed = Math.max(0, Date.now() - startedAt);
-  const days = Math.floor(elapsed / 86400000);
-  const hours = Math.floor(elapsed / 3600000) % 24;
-  const minutes = Math.floor(elapsed / 60000) % 60;
-  const seconds = Math.floor(elapsed / 1000) % 60;
-  document.querySelector('[data-uptime-days]').textContent = days;
-  document.querySelector('[data-uptime-hours]').textContent = String(hours).padStart(2, '0');
-  document.querySelector('[data-uptime-minutes]').textContent = String(minutes).padStart(2, '0');
-  document.querySelector('[data-uptime-seconds]').textContent = String(seconds).padStart(2, '0');
-}
-updateUptime();
-setInterval(updateUptime, 1000);
-
 const healthGrid = document.querySelector('.health-grid');
 if (healthGrid) healthGrid.innerHTML = '<span></span>'.repeat(60);
 
@@ -46,6 +31,15 @@ copyButton?.addEventListener('click', async () => {
     setTimeout(() => copyButton.textContent = '复制', 1400);
   } catch {
     copyButton.textContent = '复制失败';
+  }
+});
+
+window.addEventListener('message', event => {
+  if (event.data?.themeMode === 'dark' || event.data?.themeMode === 'light') {
+    document.documentElement.dataset.theme = event.data.themeMode;
+  }
+  if (typeof event.data?.lang === 'string') {
+    document.documentElement.lang = event.data.lang;
   }
 });
 

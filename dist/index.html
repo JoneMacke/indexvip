@@ -3,45 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="连接全球前沿模型的智能 API 基础设施。" />
+    <meta name="description" content="桃子 AI API：统一接入主流模型的智能 API 服务。" />
     <meta name="theme-color" content="#f7f6f2" />
-    <title>AI API — 更快连接前沿模型</title>
+    <title>桃子 AI API — 更快连接前沿模型</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/landing/styles.css?v=20260905-1" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
     <main id="top">
       <section class="hero section-wrap">
-        <div class="quick-bar reveal">
-          <div class="quick-links">
-            <a href="#status"><span class="live-dot"></span> 服务状态</a>
-            <a href="#models">模型生态</a>
-            <a href="#workflow">接入指南</a>
-          </div>
-          <a class="quick-cta" href="#pricing">免费开始 <span>→</span></a>
-        </div>
+        <div class="hero-spacer" aria-hidden="true"></div>
 
-        <div class="uptime reveal" id="status">
-          <span class="uptime-label">稳定运行</span>
-          <strong data-uptime-days>168</strong><span>天</span>
-          <strong data-uptime-hours>08</strong><span>时</span>
-          <strong data-uptime-minutes>24</strong><span>分</span>
-          <strong data-uptime-seconds>36</strong><span>秒</span>
-          <span class="status-note"><i></i> 所有系统正常</span>
-        </div>
-
-        <div class="eyebrow reveal"><span></span> 快速 · 聚合 · 可靠</div>
         <h1 class="hero-title reveal">
           让每一次智能调用<br />
           都<span class="accent-word">快人一步</span><i class="spark" aria-hidden="true">✦</i>
         </h1>
-        <p class="hero-copy reveal">一个接口连接 OpenAI、Claude、Gemini 等全球前沿模型。<br class="desktop-only" />无需改变开发习惯，即刻获得稳定、透明且高性能的模型服务。</p>
+        <p class="hero-copy reveal">一个接口连接主流模型与兼容渠道。<br class="desktop-only" />保持熟悉的 OpenAI 兼容调用方式，按需使用模型服务。</p>
         <div class="hero-actions reveal">
-          <a class="button button-dark" href="#pricing">获取 API Key <span>↗</span></a>
-          <a class="button button-ghost" href="#workflow"><span class="play-icon">▶</span> 查看接入方式</a>
+          <a class="button button-dark" href="/register" target="_top">创建账号 <span>↗</span></a>
+          <a class="button button-ghost" href="/models" target="_top"><span class="play-icon">▶</span> 查看接入方式</a>
         </div>
         <div class="model-chips reveal" aria-label="热门模型">
           <span><i class="chip-logo openai">O</i> GPT-5</span>
@@ -86,7 +69,7 @@
               <div class="core-logo"><span class="brand-mark large"><svg viewBox="0 0 36 36" fill="none"><path d="M7 21.5C10.8 9.8 16.8 5.5 29 7c-2.3 13.2-8.8 20-21.5 22 4.8-2.6 8-6.1 10.1-10.3C14 21 10.6 22 7 21.5Z" fill="currentColor"/><circle cx="24.5" cy="12" r="2.2" fill="#F06D54"/></svg></span></div>
               <strong>智能 Gateway</strong>
               <small>智能模型路由核心</small>
-              <div class="core-status"><i></i> 12ms</div>
+              <div class="core-status"><i></i> API ROUTING</div>
             </div>
 
             <div class="route-lines right-lines" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -100,7 +83,7 @@
           </div>
           <div class="terminal-strip mono">
             <span><i class="terminal-dot"></i> POST /v1/responses</span>
-            <span>200 OK</span><span>TTFT 0.31s</span><span class="terminal-live">STREAMING</span>
+            <span>示例响应</span><span>OpenAI COMPATIBLE</span><span class="terminal-live">STREAMING</span>
           </div>
         </div>
       </section>
@@ -125,13 +108,13 @@
 
         <div class="feature-bento">
           <article class="feature-card feature-wide reveal">
-            <div class="feature-copy"><span class="feature-number mono">01</span><h3>一次配置，全模型可用</h3><p>兼容 OpenAI 标准协议，不需要重写业务代码。一个 API Key 即可按需调用不同厂商的前沿模型。</p><a href="#workflow">查看接入方式 <span>→</span></a></div>
+            <div class="feature-copy"><span class="feature-number mono">01</span><h3>一次配置，全模型可用</h3><p>兼容 OpenAI 标准协议，不需要重写业务代码。一个 API Key 即可按需调用不同厂商的前沿模型。</p><a href="/models" target="_top">查看接入方式 <span>→</span></a></div>
             <div class="code-demo" aria-label="API 接入代码示例">
               <div class="code-top"><span class="mono">quickstart.ts</span><span class="copy-code">复制</span></div>
               <pre><code><em>import</em> OpenAI <em>from</em> <b>"openai"</b>;
 
 <em>const</em> client = <em>new</em> OpenAI({
-  baseURL: <b>"https://api.example.com/v1"</b>,
+  baseURL: <b>"https://new.lume.qzz.io/v1"</b>,
   apiKey: process.env.<span>API_KEY</span>
 });
 
@@ -144,17 +127,17 @@
           </article>
 
           <article class="feature-card metric-card reveal">
-            <span class="feature-number mono">02</span><h3>极速响应</h3><div class="big-metric"><span>31</span><small>ms</small></div><p>智能选择当前最快节点，让首字响应保持迅捷。</p>
+            <span class="feature-number mono">02</span><h3>兼容主流协议</h3><div class="big-metric"><span>1</span><small> API</small></div><p>使用熟悉的 OpenAI 兼容接口接入可用模型与渠道。</p>
             <div class="mini-chart" aria-hidden="true"><i style="height:33%"></i><i style="height:48%"></i><i style="height:41%"></i><i style="height:66%"></i><i style="height:55%"></i><i style="height:79%"></i><i style="height:68%"></i><i style="height:91%"></i><i style="height:82%"></i><i style="height:100%"></i></div>
           </article>
 
           <article class="feature-card uptime-card reveal">
-            <span class="feature-number mono">03</span><h3>可靠而稳定</h3><div class="availability"><span>99.99</span><small>%</small></div><p>多节点容灾与秒级故障迁移，让高频调用始终在线。</p>
+            <span class="feature-number mono">03</span><h3>用量清晰可查</h3><div class="availability"><span>LIVE</span><small> STATUS</small></div><p>模型、余额、令牌和调用记录以桃子站控制台实际数据为准。</p>
             <div class="health-grid" aria-hidden="true"></div>
           </article>
 
           <article class="feature-card security-card reveal">
-            <span class="feature-number mono">04</span><div class="shield"><svg viewBox="0 0 64 64" fill="none"><path d="M32 5 53 13v16c0 14-8.8 24.7-21 30C19.8 53.7 11 43 11 29V13L32 5Z" stroke="currentColor" stroke-width="2"/><path d="m23 31 6 6 13-14" stroke="#F06D54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>数据安全优先</h3><p>请求数据不落盘、不用于训练。端到端加密保护每一次调用。</p>
+            <span class="feature-number mono">04</span><div class="shield"><svg viewBox="0 0 64 64" fill="none"><path d="M32 5 53 13v16c0 14-8.8 24.7-21 30C19.8 53.7 11 43 11 29V13L32 5Z" stroke="currentColor" stroke-width="2"/><path d="m23 31 6 6 13-14" stroke="#F06D54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>凭据由控制台管理</h3><p>请通过桃子站账号和控制台管理 API Key，不在公开页面填写敏感信息。</p>
           </article>
         </div>
       </section>
@@ -179,15 +162,15 @@
           <article class="price-card reveal">
             <div class="plan-line"><span class="plan-icon">◇</span><span>开发者</span></div><p>适合个人项目和产品原型</p><div class="price"><small>¥</small><strong>0</strong><span>起步门槛</span></div>
             <ul><li>全系列主流模型</li><li>按量使用，余额长期有效</li><li>标准并发与技术支持</li><li>完整 API 与使用日志</li></ul>
-            <a class="button button-outline full" href="#top">免费开始</a>
+            <a class="button button-outline full" href="/register" target="_top">注册使用</a>
           </article>
           <article class="price-card reveal">
             <div class="plan-line"><span class="plan-icon">▱</span><span>企业版</span></div><p>为规模化业务定制基础设施</p><div class="price custom"><strong>定制</strong><span>按业务需求</span></div>
             <ul><li>专属资源池与独立通道</li><li>SLA 保障和用量折扣</li><li>团队权限与账单管理</li><li>专属客户成功经理</li></ul>
-            <a class="button button-outline full" href="mailto:hello@example.com">联系商务</a>
+            <a class="button button-outline full" href="/login" target="_top">进入控制台</a>
           </article>
         </div>
-        <p class="pricing-note reveal">所有套餐均支持随时升级或停止 · 无隐藏费用 · 用量实时可查</p>
+        <p class="pricing-note reveal">具体模型、余额和用量以桃子站控制台显示为准</p>
       </section>
 
       <section class="final-cta section-wrap">
@@ -196,12 +179,12 @@
           <span class="cta-star">✦</span>
           <p class="mono">READY WHEN YOU ARE</p>
           <h2>准备好让灵感<br />跑得更快了吗？</h2>
-          <p>现在注册，获得新用户免费调用额度。</p>
-          <a class="button button-light" href="#top">免费创建账号 <span>↗</span></a>
+          <p>注册账号后，按控制台实际规则使用模型服务。</p>
+          <a class="button button-light" href="/register" target="_top">创建账号 <span>↗</span></a>
         </div>
       </section>
     </main>
-    <script type="module" src="/script.js"></script>
+    <script type="module" src="/landing/script.js?v=20260905-1"></script>
   </body>
 </html>
 
