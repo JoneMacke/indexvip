@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/landing/styles.css?v=20260905-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260906-1" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -45,18 +45,18 @@
             <div class="flow-column clients">
               <div class="column-label mono">01 / CLIENTS</div>
               <div class="flow-card active">
-                <div class="flow-icon codex-icon">⌘</div>
+                <div class="flow-icon brand-icon"><img data-icon="codex" src="assets/icons/codex.svg" alt="" /></div>
                 <div><strong>Codex</strong><small>高频编码工作流</small></div>
                 <span class="ping"></span>
               </div>
               <div class="flow-card">
-                <div class="flow-icon terminal-icon">›_</div>
+                <div class="flow-icon brand-icon"><img data-icon="claudecode" src="assets/icons/claudecode.svg" alt="" /></div>
                 <div><strong>Claude Code</strong><small>终端开发助手</small></div>
                 <span class="ping"></span>
               </div>
               <div class="flow-card">
-                <div class="flow-icon cherry-icon">C</div>
-                <div><strong>Cherry Studio</strong><small>桌面智能客户端</small></div>
+                <div class="flow-icon brand-icon monochrome-icon"><img data-icon="opencode" src="assets/icons/opencode.svg" alt="" /></div>
+                <div><strong>OpenCode</strong><small>开源编码智能体</small></div>
                 <span class="ping"></span>
               </div>
             </div>
@@ -76,9 +76,9 @@
 
             <div class="flow-column models">
               <div class="column-label mono">02 / MODELS</div>
-              <div class="flow-card"><div class="flow-icon openai-bg">O</div><div><strong>OpenAI</strong><small>GPT-5 / o3</small></div><span class="load">24%</span></div>
-              <div class="flow-card active"><div class="flow-icon claude-bg">A</div><div><strong>Anthropic</strong><small>Claude Opus</small></div><span class="load">41%</span></div>
-              <div class="flow-card"><div class="flow-icon gemini-bg">✦</div><div><strong>Google</strong><small>Gemini Pro</small></div><span class="load">18%</span></div>
+              <div class="flow-card"><div class="flow-icon brand-icon image-icon"><img data-icon="openai" src="assets/icons/openai.png" alt="" /></div><div><strong>OpenAI</strong><small>GPT 系列模型</small></div><span class="load">24%</span></div>
+              <div class="flow-card active"><div class="flow-icon brand-icon monochrome-icon"><img data-icon="anthropic" src="assets/icons/anthropic.svg" alt="" /></div><div><strong>Anthropic</strong><small>Claude 系列模型</small></div><span class="load">41%</span></div>
+              <div class="flow-card"><div class="flow-icon brand-icon"><img data-icon="gemini" src="assets/icons/gemini.svg" alt="" /></div><div><strong>Google</strong><small>Gemini 系列模型</small></div><span class="load">18%</span></div>
             </div>
           </div>
           <div class="terminal-strip mono">
@@ -91,12 +91,14 @@
       <section class="logo-cloud section-wrap" id="models">
         <p class="section-kicker reveal">为你常用的工具而生</p>
         <div class="logo-row reveal">
-          <div class="logo-item"><span class="logo-symbol">◎</span> OpenAI</div>
-          <div class="logo-item"><span class="logo-symbol">AI</span> Anthropic</div>
-          <div class="logo-item"><span class="logo-symbol">✦</span> Gemini</div>
-          <div class="logo-item"><span class="logo-symbol">◫</span> DeepSeek</div>
-          <div class="logo-item"><span class="logo-symbol">◉</span> Grok</div>
-          <div class="logo-item"><span class="logo-symbol">⌘</span> Codex</div>
+          <div class="logo-item"><span class="tool-logo"><img data-icon="codex" src="assets/icons/codex.svg" alt="" /></span><span>Codex</span></div>
+          <div class="logo-item"><span class="tool-logo"><img data-icon="claudecode" src="assets/icons/claudecode.svg" alt="" /></span><span>Claude Code</span></div>
+          <div class="logo-item"><span class="tool-logo monochrome-icon"><img data-icon="opencode" src="assets/icons/opencode.svg" alt="" /></span><span>OpenCode</span></div>
+          <div class="logo-item"><span class="tool-logo monochrome-icon"><img data-icon="hermes" src="assets/icons/hermes.svg" alt="" /></span><span>Hermes</span></div>
+          <div class="logo-item"><span class="tool-logo"><img data-icon="openclaw" src="assets/icons/openclaw.svg" alt="" /></span><span>OpenClaw</span></div>
+          <div class="logo-item"><span class="tool-logo monochrome-icon"><img data-icon="pi" src="assets/icons/pi.svg" alt="" /></span><span>Pi Agent</span></div>
+          <div class="logo-item"><span class="tool-logo chatbox-icon"><img data-icon="chatbox" src="assets/icons/chatbox.png" alt="" /></span><span>Chatbox</span></div>
+          <div class="logo-item"><span class="tool-logo"><img data-icon="cherrystudio" src="assets/icons/cherrystudio.svg" alt="" /></span><span>Cherry Studio</span></div>
         </div>
       </section>
 
@@ -184,7 +186,7 @@
         </div>
       </section>
     </main>
-    <script type="module" src="/landing/script.js?v=20260905-1"></script>
+    <script type="module" src="./script.js?v=20260906-1"></script>
   </body>
 </html>
 
