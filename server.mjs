@@ -20,4 +20,4 @@ const server = http.createServer((req, res) => {
     res.end(data);
   });
 });
-server.listen(port, '127.0.0.1', () => console.log(`星流主页已运行：http://127.0.0.1:${port}`));
+server.listen(port, '127.0.0.1', () => console.log(`indexvip 主页已运行：http://127.0.0.1:${port}`));
